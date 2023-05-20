@@ -8,7 +8,6 @@ export const Grid = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [totalPages, setTotalPages] = useState(1);
   const [searchValue, setSearchValue] = useState('');
-  const [page, setPage] = useState(0);
   const [isLoading, setIsLoading] = useState(true);
 
   const navigate = useNavigate();
@@ -68,7 +67,7 @@ export const Grid = () => {
             <tr>
               <td colSpan="4">Loading...</td>
             </tr>
-          ) : filterdata.slice(page, page + 10).map((ele) => (
+          ) : filterdata?.map((ele) => (
             <tr onClick={() => {
               navigate(`/Comments/${ele.userId}`);
             }} key={ele.id}>

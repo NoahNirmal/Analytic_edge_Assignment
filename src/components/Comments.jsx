@@ -6,7 +6,6 @@ import './Grid.css';
 export const Comments = () => {
   const { id } = useParams();
   const [commentsData, setCommentsData] = useState([]);
-
   const [userData, setUserData] = useState(null);
 
   useEffect(() => {
@@ -27,9 +26,13 @@ export const Comments = () => {
   }, [id]);
 
   return (
-    <div className="Grid_Container">
+    <div className="Grid_Container userdetails">
         {userData ? (
         <div className='user_container'>
+            <div className='heading_user'>
+                <h1>User-Details & Comments</h1>
+
+            </div>
           <h2>{userData.name}</h2>
           <p>Email: {userData.email}</p>
           <p>Phone: {userData.phone}</p>
@@ -38,7 +41,7 @@ export const Comments = () => {
       ) : (
         <p>Loading user data...</p>
       )}
-      <table>
+      <table className='table_comments'>
         <thead>
           <tr>
             <th>Post ID</th>

@@ -1,5 +1,4 @@
 .Grid_Container{
- /* border: 2px red solid; */
  width: 80%;
  height: 75%;
  margin: 2rem 1rem;
@@ -12,35 +11,43 @@
 }
 
 .Filter_container{
-    /* border: 2px blue solid; */
     width: 100%;
     height: 8vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #327a80;
+    background-color: #08414a;
+    padding: 2rem 1rem;
 }
 .Filter_container h1{
   margin-left: 1rem;
   color: white;
-  font-weight: 400;
+  font-weight: 500;
+  text-shadow: 1px 2px 3px black ;
+  text-transform: uppercase;
+
+
 }
 .Filter_container input{
     width: 30%;
-    padding :5px 10px;
+    padding :8px 10px;
     margin-right: 1rem;
     outline: none;
 }
 
-table {
+.Grid_Container table {
     width: 100%;
     height: 100%;
     border-collapse: collapse;
     margin-bottom: 0.5rem;
     margin: 0rem 1rem;
+    border: none;
+    
 
 
   }
+
+  
   
  
   table th,
@@ -77,7 +84,14 @@ table tbody tr:hover{
 }
 .paginations{
 /* border: 2px red solid; */
-margin: 1rem;
+width: 100%;
+height: 100%;
+background-color: #08414a;
+
+padding: 1rem;
+display: flex;
+justify-content: center;
+align-items: center;
 }
 button{
   padding: 5px 10px;
@@ -89,10 +103,16 @@ button{
     padding: 5px 10px;
     margin: 0.5rem;
     background-color: transparent;
-    color: #183032;
+    color: white;
     border:none;
     border-radius: 50%;
     font-size: 0.9rem;
+
+  }
+
+  .numbers:hover{
+    background-color:white;
+    color: #08414a;
 
   }
   
@@ -103,7 +123,7 @@ button{
 
   .user_container{
     width: 100%;
-    height: 20vh;
+    height: 30vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -111,4 +131,54 @@ button{
     padding: 1rem;
     background-color: #08414a;
     color: white;
+  }
+
+  .heading_user{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    
+  }
+
+  .heading_user h1{
+    text-shadow: 1px 2px 3px black ;
+    text-transform: uppercase;
+  }
+
+  
+  
+
+  @media  only screen  and (max-width:480px){
+
+    .Grid_Container{
+      width: 90%;
+      height: 75%;
+     
+    }
+
+    .userdetails{
+      width: 90%;
+      margin: 1rem 0rem;
+    }
+
+    .table_comments{
+      font-size: 0.4rem;
+    }
+
+    .heading_user h1{
+      font-size: 1rem;
+    }
+   
+  }
+
+  @media  only screen  and (min-width:480px)and (max-width:550px){
+
+  
+    .userdetails{
+      width: 90%;
+      margin: 1rem 0rem;
+    }
   }
