@@ -86,8 +86,8 @@ export const Grid = () => {
         }} disabled={currentPage === 1}>Previous</button>
         <span>
           {Array.from({ length: totalPages }, (_, i) => i + 1).map((ele) => (
-            <button
-              className='numbers'
+            <button 
+              className={ele ===currentPage?"active":"numbers"}
               key={ele}
               onClick={() => {
                 setCurrentPage(ele);

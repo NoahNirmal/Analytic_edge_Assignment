@@ -110,6 +110,15 @@ button{
 
   }
 
+  .active{
+    background-color:white;
+    color: #08414a;
+    border-radius: 50%;
+    font-size: 0.9rem;
+    border:none;
+  
+  }
+
   .numbers:hover{
     background-color:white;
     color: #08414a;
