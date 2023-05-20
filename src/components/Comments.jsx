@@ -33,7 +33,7 @@ export const Comments = () => {
                 <h1>User-Details & Comments</h1>
 
             </div>
-          <h2>{userData.name}</h2>
+          <h2>"{userData.name}"</h2>
           <p>Email: {userData.email}</p>
           <p>Phone: {userData.phone}</p>
           <p>Website: {userData.website}</p>
